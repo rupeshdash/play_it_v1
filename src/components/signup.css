@@ -1,0 +1,19 @@
+.signUpWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.signUpCard{
+    width: 27vw;
+    margin-top: 5%;
+}
+
+.logo{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
