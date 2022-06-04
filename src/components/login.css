@@ -1,0 +1,19 @@
+.logInWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.logInCard {
+    width: 27vw;
+    margin-top: 5%;
+}
+
+.logo {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}

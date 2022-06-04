@@ -9,8 +9,8 @@ import Alert from "@mui/material/Alert";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
-import {Link} from "react-router-dom"
-import "./signup.css";
+import { Link } from "react-router-dom";
+import "./login.css";
 import playit from "../Assets/Play.png";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 export default function Signup() {
@@ -23,22 +23,15 @@ export default function Signup() {
 
   const classes = useStyles();
   return (
-    <div className="signUpWrapper">
-      <div className="signUpCard">
+    <div className="logInWrapper">
+      <div className="logInCard">
         <Card variant="outlined">
           <div className="logo">
-                      {/* <img src={playit} className="logo" alt="" srcset="" /> */}
-                      <p>Bhai navneet   logo daal dena yahan</p>
+            {/* <img src={playit} className="logo" alt="" srcset="" /> */}
+            <p>Bhai navneet logo daal dena yahan</p>
           </div>
 
           <CardContent>
-            <Typography
-              className={classes.text1}
-              variant="subtitle1"
-              component="div"
-            >
-              Sign up to see photos and videos from your friends
-            </Typography>
             {true && (
               <Alert severity="error">
                 This is an error alert — check it out!
@@ -63,25 +56,6 @@ export default function Signup() {
               size="small"
               type="password"
             />
-            <TextField
-              id="outlined-basic"
-              label="Full Name"
-              variant="outlined"
-              fullWidth="true"
-              margin="dense"
-              size="small"
-            />
-            <Button
-              color="primary"
-              fullWidth="true"
-              margin="dense"
-              variant="outlined"
-              startIcon={<CloudUploadIcon />}
-              component="label"
-            >
-              Upload your profile picture
-              <input type="file" accept="image/*" hidden />
-            </Button>
           </CardContent>
           <CardActions>
             <Button
@@ -90,20 +64,21 @@ export default function Signup() {
               variant="contained"
               margin="dense"
             >
-              Sign up
+              Login
             </Button>
           </CardActions>
           <CardContent>
             <Typography
-              className={classes.text1}
+              color="primary"
               variant="subtitle1"
               component="div"
+              textAlign="center"
             >
-              By signing up you will agree to our terms and conditions, Data
-              policies and cookies
+              Forgot password?
             </Typography>
           </CardContent>
         </Card>
+
         <Card variant="outlined">
           <CardContent>
             <Typography
@@ -111,7 +86,10 @@ export default function Signup() {
               variant="subtitle1"
               component="div"
             >
-              Already have an account? please <Link to="/login" style={{textDecoration:"none"}}>Login</Link>
+              Already have an account? please{" "}
+              <Link to="/signup" style={{ textDecoration: "none" }}>
+                Sign up
+              </Link>
             </Typography>
           </CardContent>
         </Card>
